@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+        }
+        body{
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        iframe{
+            width: 100%;
+            height: 300px;
+        }
+        h2{
+           width: 100%;
+           text-align: center; 
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border: 2px solid #090909;
+            border-radius: 20px;
+            box-shadow: #00000059 0px 5px 15px;
+        }
+        .container input{
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: #00000059 0px 5px 15px;
+        }
+        button, select{
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: #00000059 0px 5px 15px;
+        }
+        select{
+            margin-top: -1px;
+        }
+        button{
+            color: #ffffff;
+            background-color: #090909;
+        }
+        h3{
+            width: 100%;
+            text-align: center;
+            color: #199522;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem expedita labore in ducimus doloremque, eveniet facere tenetur at incidunt sunt exercitationem et animi temporibus aspernatur ipsam sapiente nisi quod!</p>
+    <br>
+    <p>hsua sahu oywgiui</p>
+    <br>
+    <img src="https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg" alt="Céu com flor">
+    <br>
+    <iframe src="https://www.youtube.com/embed/E9Rhh4xntmw?si=lpJHpL9J2xHcVMXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div></div>
+    <br><br><br>
+    <h2>Formulario</h2>
+    <br>
+    <div class="container">
+        <label for="fname">Nome:</label>
+        <input type="text" id="fname" placeholder="Insira seu nome">
+        <label for="lname">Sobrenome:</label>
+        <input type="text" id="lname" placeholder="Insira seu sobrenome">
+        <label for="age">Idade:</label>
+        <input type="number" id="age" placeholder="Insira sua idade">
+        <label for="cities">Cidade:</label>
+        <select id="cities">
+            <option value="Curitiba">Curitiba</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Florianópolis">Florianópolis</option>
+            <option value="Rio Branco">Rio Branco</option>
+        </select>
+        <button onclick="printar()">Printar texto completo</button>
+    </div>
+      <br>
+        <h3 id="print"></h3>
+    <br><br><br>
+    <script>
+        function printar(){
+         var first = document.getElementById("fname").value 
+         var last = document.getElementById("lname").value
+         var age = document.getElementById("age").value
+         var city = document.getElementById("cities").value
+         var print = document.getElementById("print")
+         //concatenação de strings
+         //print.textContent = first + " " + last
+         //template string
+         print.textContent = `Meu nome é ${first} ${last}, tenho ${age} anos de idade e moro em ${city}.`
+        }
+    </script>
+</body>
+</html>
+
+
