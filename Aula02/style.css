@@ -1,7 +1,7 @@
 :root{
    --darkBlue: #000814;
    --mediumBlue: #001D3D;
-   --lightblue: #003566;
+   --lightblue: #2484de;
    --darkYellow: #FFC300;
    --lightYellow: #FFD60A;
    --white: #ffffff;
@@ -106,8 +106,7 @@ section h2{
 
 .link-projeto{
     text-decoration: none !important;
-    color: var(--lightYellow);
-    width: 100% !important;
+    color: var(--white);
     text-align: center !important;
     padding-left: 25%;
     background-color: var(--lightblue);
@@ -118,6 +117,26 @@ section h2{
 
 .link-projeto:active{
     text-decoration: underline;
+}
+
+#section3{
+    padding-bottom: 10vh;
+}
+
+.wrap-cards{
+    padding: 20px;
+}
+
+.card-title{
+    color: var(--darkBlue);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text{
+    color: var(--lightblue);
+    font-size: 1rem;
+    font-size: 400;
 }
 
 footer{
