@@ -21,7 +21,7 @@ body{
 
 .navbar{
     /* background-color: var(--lightblue) !important; */
-    box-shadow: #ffd60aba 0px 3px 6px, #ffd60a83 0px 3px 6px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
     position: fixed !important;
     width: 100%;
 }
@@ -40,6 +40,25 @@ body{
 section{
     min-height: 100vh;
     height: auto;
-    padding-top: 8vh;
+    padding-top: 10vh;
+}
+
+footer{
+    background-color: var(--white);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.img-footer{
+    width: 50px;
+    height: auto;
+    box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+    border-radius: 15px;
 }
 
