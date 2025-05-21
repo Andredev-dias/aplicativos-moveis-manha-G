@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-</head>
-<body>
-    <h1>calculadora</h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a class="back-btn" href="../Menu/"
+      ><img
+        width="50px"
+        height="auto"
+        src="./images/arrow-circle-left.png"
+        alt="Voltar"
+    /></a>
+    <h1>Calculadora</h1>
+    <img class="logo" src="./images/logoMath.jpg" alt="Logo">
+    <main>
+      <section>
+        <h2>Somar</h2>
+        <input id="n1" type="number" placeholder="Digite um número" />
+        <input id="n2" type="number" placeholder="Digite um número" />
+        <button onclick="somar()">Calcular</button>
+        <h3 id="resultadoSoma"></h3>
+      </section>
+      <section>
+        <h2>Subtrair</h2>
+        <input id="n3" type="number" placeholder="Digite um número" />
+        <input id="n4" type="number" placeholder="Digite um número" />
+        <button onclick="subtrair()">Calcular</button>
+        <h3 id="resultadoSub"></h3>
+      </section>
+      <section>
+        <h2>Multiplicar</h2>
+        <input id="n5" type="number" placeholder="Digite um número" />
+        <input id="n6" type="number" placeholder="Digite um número" />
+        <button onclick="multiplicar()">Calcular</button>
+        <h3 id="resultadoMult"></h3>
+      </section>
+      <section>
+        <h2>Dividir</h2>
+        <input id="n7" type="number" placeholder="Digite um número" />
+        <input id="n8" type="number" placeholder="Digite um número" />
+        <button onclick="dividir()">Calcular</button>
+        <h3 id="resultadoDiv"></h3>
+      </section>
+    </main>
+  </body>
 </html>
