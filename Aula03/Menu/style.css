@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../images/borboleta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+p{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    background-color: rgba(243, 243, 243, 0.485);
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(11, 44, 62);
+    width:70%;
+    padding: 20px 40px;
+}
+
+.p1{
+    animation: fromTop 2s ease-in-out;
+}
+.p2{
+    animation: fromLeft 2s ease-in-out;
+}
+.p3{
+    animation: fromRight 2s ease-in-out;
+}
+.p4{
+    animation: fromBottom 2s ease-in-out;
+}
+
+p:active{
+    background-color: rgba(243, 243, 243, 0.679);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+   
+}
+
+@keyframes fromTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fromLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromRight {
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
