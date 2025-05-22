@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 20vh;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 800;
+}
+
+.banner{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.back-btn{
+    text-align: left;
+    position: fixed;
+    top: 25px;
+    left: 10px;
+    z-index: 999;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    margin-top: 4vh;
+}
+
+div{
+    border-radius: 999px;
+    background-color: rgba(13, 149, 240, 0.939);
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label{
+    margin-right: 10px;
+}
+
+input{
+    border: none;
+    border-radius: 999px;
+    padding: 10px;
+    height: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+}
+
+button:active{
+    background: linear-gradient(265deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+#res{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+

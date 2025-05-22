@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <a class="back-btn" href="../Menu/"><img width="50px" height="auto" src="./images/arrow-circle-left.png" alt="Voltar"></a>
     <h1>IMC</h1>
+    <img class="banner" src="./images/IMC.jpg" alt="logo" width="100%" height="auto">
+    <main>
+        <div>
+            <label for="peso"><img src="./images/weight.png" alt="Peso" width="50px"></label>
+            <input id="peso" type="number" placeholder="Insira seu peso (kg)">
+        </div>
+        <div>
+            <label for="altura"><img src="./images/height.png" alt="Altura" width="50px"></label>
+            <input id="altura" type="number" placeholder="Insira sua altura (m)">
+        </div>
+        <p id="res"></p>
+        <p id="msg"></p>
+        <button onclick="calcIMC()">CALCULAR IMC</button>
+    </main>
 </body>
 </html>
