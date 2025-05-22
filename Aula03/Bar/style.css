@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite HU", cursive;
+}
+
+.back-btn {
+    text-align: left;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+body {
+    background-color: rgb(34, 14, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    box-shadow: rgba(240, 46, 170, 0.1) 0px 5px, rgba(240, 46, 170, 0.1) 0px 15px, rgba(240, 46, 170, 0.1) 0px 25px, rgba(240, 46, 170, 0.1) 0px 30px, rgba(240, 46, 170, 0.05) 0px 40px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    margin-top: 5vh;
+    font-size: 2.6rem;
+}
+
+.wrapInputs {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+}
+
+.wrapResults {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4vh;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 85%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border: 5px solid rgba(240, 46, 170, 0.4);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(240, 46, 169, 0.793);
+    color: #ffffff;
+    font-weight: 900;
+    border: none;
+    border: 5px solid rgba(255, 255, 255, 0.793);
+}
+
+button:active {
+    border: 5px solid rgba(240, 46, 169, 0.793);
+    background-color: #ffffff;
+    color: rgba(240, 46, 169, 0.793);
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}

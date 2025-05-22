@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bar</title>
-</head>
-<body>
-   <h1>bar</h1> 
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="back-btn" href="../Menu/"
+      ><img
+        width="50px"
+        height="auto"
+        src="./images/arrow-circle-left.png"
+        alt="Logo"
+    /></a>
+    <img
+      class="logo"
+      src="./images//logo.jpg"
+      width="100%"
+      height="auto"
+      alt=""
+    />
+    <h1><strong>BAR</strong> - entrada</h1>
+    <div class="wrapInputs">
+      <input
+        type="number"
+        id="clientBirth"
+        placeholder="Qual ano você nasceu?"
+      />
+      <button onclick="checkMajority()">Verificar idade</button>
+    </div>
+    <div class="wrapResults">
+      <p id="result"></p>
+      <p id="clientAge"></p>
+    </div>
+  </body>
 </html>

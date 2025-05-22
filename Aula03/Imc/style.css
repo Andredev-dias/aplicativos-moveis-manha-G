@@ -72,7 +72,7 @@ input{
 button{
     width: 100%;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
     background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
     border: none;
     font-size: 1.4rem;
@@ -91,9 +91,24 @@ button:active{
 #res{
     width: 100%;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: rgba(13, 149, 240, 0.939);
+    width: 80%;
+    border-radius: 999px;
+    padding: 10px;
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 3px solid #090909;
+    display: none;
 }
+
+#msg{
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 
