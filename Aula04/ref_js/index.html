@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REFATORAÇÃO DO JS - CALCULOS</title>
+  </head>
+  <body>
+    <h1>Cálculos usando apenas uma função, com passagem de parâmetros</h1>
+    <section>
+      <h2>Somar</h2>
+      <input type="number" id="n1" placeholder="Insira um número" />
+      <input type="number" id="n2" placeholder="Insira um número" />
+      <button onclick="calcular('n1', 'n2', 'respSoma', '+')">CALCULAR</button>
+      <p id="respSoma"></p>
+    </section>
+    <section>
+      <h2>Sub</h2>
+      <input type="number" id="n3" placeholder="Insira um número" />
+      <input type="number" id="n4" placeholder="Insira um número" />
+      <button onclick="calcular('n3', 'n4', 'respSub', '-')">CALCULAR</button>
+      <p id="respSub"></p>
+    </section>
+    <section>
+      <h2>Mult</h2>
+      <input type="number" id="n5" placeholder="Insira um número" />
+      <input type="number" id="n6" placeholder="Insira um número" />
+      <button onclick="calcular('n5', 'n6', 'respMult', '*')">CALCULAR</button>
+      <p id="respMult"></p>
+    </section>
+    <section>
+      <h2>Div</h2>
+      <input type="number" id="n7" placeholder="Insira um número" />
+      <input type="number" id="n8" placeholder="Insira um número" />
+      <button onclick="calcular('n7', 'n8', 'respDiv', '/')">CALCULAR</button>
+      <p id="respDiv"></p>
+    </section>
+    <script>
+      function calcular(numero1, numero2, resposta, operador) {
+        var num1 = parseFloat(document.getElementById(numero1).value);
+        var num2 = parseFloat(document.getElementById(numero2).value);
+        var resultado;
+
+        switch (operador) {
+          case "+":
+            resultado = num1 + num2;
+            break;
+          case "-":
+            resultado = num1 - num2;
+            break;
+          case "*":
+            resultado = num1 * num2;
+            break;
+          case "/":
+            if(num2 !== 0){
+                resultado = num1 / num2;
+            } else {
+                resultado = "Erro divisão por 0"
+            }
+            break;
+          default:
+            "Operador inválido";
+            break;
+        }
+        document.getElementById(resposta).textContent = format(resultado)
+      }
+
+      function format(resultado){
+        if(Number.isInteger(resultado)){
+            return resultado
+        } else if(resultado !== "Erro divisão por 0"){
+            return resultado.toFixed(2)
+        } else {
+            return resultado
+        }
+      }
+    </script>
+  </body>
+</html>
